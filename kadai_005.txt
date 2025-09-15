@@ -1,0 +1,17 @@
+apple@Mac kadai % mkdir git_challenge
+apple@Mac kadai % git init
+Initialized empty Git repository in /Users/apple/Desktop/kadai/.git/
+apple@Mac kadai % echo "Hello, world" >> git_challenge/hello_world.txt
+apple@Mac kadai % git add git_challenge
+apple@Mac kadai % git commit -m "hello_world.txtを追加"
+[main (root-commit) 4088d20] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 git_challenge/hello_world.txt
+apple@Mac kadai % echo "こんにちは、世界！" >> git_challenge/hello_world.txt
+apple@Mac kadai % git add git_challenge                                     
+apple@Mac kadai % git commit -m "日本語訳を追記"                            
+[main 87e649a] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+apple@Mac kadai % git log --oneline
+87e649a (HEAD -> main) 日本語訳を追記
+4088d20 hello_world.txtを追加
